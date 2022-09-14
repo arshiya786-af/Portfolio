@@ -15,12 +15,12 @@
 }
 
 *::selection{
-    background:var(--yellow);
+    background:var(--blue);
     color:#333;
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 70.5%;
     overflow-x: hidden;
 }
 
@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
+    background:var(--blue);
 }
 
 body{
@@ -124,8 +124,8 @@ header .navbar ul{
 
 header .navbar ul li a{
     display: block;
-    padding:1rem;
-    margin:1.5rem 0;
+    padding:0.6rem;
+    margin:1rem 0;
     background:#333;
     color:#fff;
     font-size: 2rem;
@@ -225,7 +225,30 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color:#fff;
 }
+.colm{
+    display: grid;
+    grid-template-columns: repeat(6,90px);
+    grid-template-rows: repeat(2,110px);
+    grid-row-gap:70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    /* border:2px solid white; */
+    gap:25px;
+    color :white;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.Ski{
+    height:80px;
+    width: 130px;
+    /* border:2px solid white; */
 
+}
+.Ski img{
+    height:90px;
+
+}
 .education .box-container{
     display: flex;
     align-items: center;

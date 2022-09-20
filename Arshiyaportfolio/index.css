@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --blue:#100cbf;
+    --yellow:yellow;
 }
 
 *{
@@ -15,7 +15,7 @@
 }
 
 *::selection{
-    background:var(--blue);
+    background:var(--yellow);
     color:#333;
 }
 
@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--blue);
+    background:var(--yellow);
 }
 
 body{
@@ -99,7 +99,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--blue);
+    border:.7rem solid var(--yellow);
 }
 
 header .user .name{
@@ -133,7 +133,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background:var(--blue);
+    background:var(--yellow);
 }
 
 #menu{
@@ -146,6 +146,9 @@ header .navbar ul li a:hover{
     padding:1rem 1.5rem;
     z-index: 1000;
     display: none;
+}
+.portfolio h1{
+    color: #fff;
 }
 
 .home{
@@ -166,7 +169,7 @@ header .navbar ul li a:hover{
 }
 
 .home h1 span{
-    color:var(--blue);
+    color:var(--yellow);
 }
 
 .home p{
@@ -191,7 +194,7 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size: 2rem;
-    color:var(--blue);
+    color:var(--yellow);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -422,6 +425,7 @@ header .navbar ul li a:hover{
     .home{
         padding:1rem 4rem;
     }
+   
 
 }
 
@@ -442,6 +446,11 @@ header .navbar ul li a:hover{
    body{
        padding:0;
    }
+   .colm{
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(auto,50px);
+    grid: row gap 9px,9px;
+   }
 
 }
 
@@ -450,6 +459,11 @@ header .navbar ul li a:hover{
     html{
         font-size: 50%;
     }
+    .colm{
+        grid-template-columns: repeat(2,100px);
+        grid-template-rows: repeat(auto,50px);
+        grid: row gap 9px,9px;
+       }
  
  }
 
@@ -478,5 +492,10 @@ header .navbar ul li a:hover{
     .contact .row form{
         margin:3rem 0;
     }
+    .colm{
+        grid-template-columns: repeat(1,100px);
+        grid-template-rows: repeat(auto,50px);
+        grid: row gap 9px,9px;
+       }
 
- }
+}

@@ -1,66 +1,29 @@
-Awesome README Templates
-A collection of awesome readme templates to display on your github profile.
+Building Websites With HTML, CSS, and JavaScript: Getting Started
+Tools
+The following tools help make easier to work with sample code.
 
-Stars Badge Forks Badge Pull Requests Badge Issues Badge GitHub contributors License Badge
+git: A tool for managing source code
+Visual Studio Code: A source code editor
+Live Server: A simple web server utility for Visual Studio Code
+Echo Post: A simple Node.js server utility that displays post data.
+Setup
+If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
-Loved the project? Please visit our Website
+Download the ZIP from this location, or run the following git command to clone the files to your machine:
 
+git clone https://github.com/craigshoemaker/html-css-javascript-getting-started
+Once the files are on your machine, open the html-css-javascript-getting-started folder in Visual Studio Code.
 
-This repo aims to collect the all `awesome beautiful READMEs profile` and make your Profile look good & Inspire other's.
-If you are intersted, will create a PR for to add your README profile here.
+With the files open in Visual Studio Code, press the Go Live button at the bottom of the window to launch the files with Live Server.
 
-If you like this Repo, Please click the ⭐️
+Resources
+A list of links to resources used throughout this course is available on the Resources page.
 
-List of awesome README Profile categories mentioned below
-
-Contents
-Github README PROFILE CATEGORY
-List out Awesome README Profile Tools
-List out Awesome README Profile Articles
-Contribute
-Website
-Link : https://awesome-github-readme-profile.netlify.app
-
-Awesome README Templates
-
-Github README PROFILE CATEGORY
-[ ] Art
-[ ] Code Styled
-[ ] Creativity
-[ ] Flowcharts
-[ ] Default
-[ ] Dynamic Realtime
-[ ] Elaborate
-[ ] Multimedia
-[ ] Short-and-sweet
-[ ] Tabular
-[ ] Pie Charts
-List out Awesome README Profile Tools
-Profile Summary For Github
-Github Readme Stats - Dynamically generated stats for your github readmes
-Profile Activity Generator - Generate custom profile activity for your profile README
-All Dev Stats in Readme - Are you an early 🐤 or a night 🦉? When are you most productive during the day? What languages you code in? And other stuff... Let's check out in your readme!
-Visitor Badge - Count visitors for your README.md, Issues, PRs in GitHub
-1990s style Visitor Counter - Add a 1990s style visitor counter with one line of markdown.
-Vists Count - Count visitors for README.md that can be used with shields.io
-Shields Project - Use Shields to create profile badges, compatible with Simple Icons
-Simple Icons - SVG icons for popular brands for your README.md files
-Laravel GitHub Profile Visit Counter - Add on your Laravel project a quick-badge to count your profile visits.
-Dev Metrics in Readme - WakaTime Weekly Metrics on your Profile Readme
-Current UTC time - Example code of server that can serve dynamic content on GitHub profile
-Github Activity in README - Updates README.md with the recent GitHub activity of a user
-Github Profile README Generator - This tool provides an easy way to create github profile readme with latest addons like visitors count, github stats etc.
-Dynamic Profile Page On Github - Get dynamically generated list of your commits (of the repositories that the action is configured) on GitHub profile readme.
-npm package downloads - Show all of your npm packages and their total downloads
-Feedparser - Convenient processing of RSS files
-Github Profile README Generator - This project allows you to create nice and simple github profile readme files.
-Github Gist Count Generator - Get gist count for your github readmes.
-List out Awesome README Profile Articles
-Contribute
-Contributions are always welcome! Please create a PR to add Github Profile.
-
-📝 License
-This project is licensed under MIT license.
-
-👨‍🚀 Show your support
-Give a ⭐️ if this project helped you!
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs

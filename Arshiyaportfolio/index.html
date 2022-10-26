@@ -32,6 +32,7 @@
             <li><a href="#skill">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#github-calendar">GitHubCalendar</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -69,7 +70,7 @@
         <h3> <span> qualification : </span> B-Tech </h3>
         <h3> <span> post : </span>Java BackEnd Developer </h3>
         <h3> <span> language : </span> English </h3>
-        <a href="https://drive.google.com/file/d/1eTEzn4TbGf-me6u9VDJSVbj-TqBWyRdD/view?usp=drivesdk"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+        <a href="https://drive.google.com/file/d/1gX3wOHgbcqRoUo0YQbwgZQ-GLVBY7xIM/view?usp=drivesdk"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
     </div>
 
 
@@ -195,9 +196,43 @@
 </div>
 
 </section>
+<section class="GitHubCalendar" id="github-calendar">
+    <h1 class="heading"> my <span>GitHubCalendar</span> </h1>
+    <!-- npm install --save github-calendar
 
-<!-- portfolio section ends -->
+     # Using yarn
+yarn add github-calendar
+Include the library. -->
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
 
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="index.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+<div class="calendar">
+  <!-- Loading stuff -->
+  Loading the data just for you.
+</div>
+
+<script>
+  GitHubCalendar(".calendar", "arshiya786-af");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "arshiya786-af", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".calendar", "arshiya786-af", {
+     proxy (username) {
+       return fetch(`https://your-proxy.com/github?user=${username}`)
+     }
+  }).then(r => r.text())
+</script>
+</section>
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
@@ -224,7 +259,7 @@
         <input type="email" placeholder="email" class="box">
         <input type="text" placeholder="project" class="box">
         <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+        <button  onclick="my()"class="btn"> send <i class="fas fa-paper-plane"></i> <a href="https://github.com/arshiya786-af"></a></button>
 
     </form>
 
@@ -246,6 +281,11 @@
 
 <!-- custom js file link  -->
 <script src="index.js"></script>
+<script>
+function my(){
+    alert("Message Sent Successfully!! Thank You")
+}
+    </script>
 
 
 </body>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:yellow;
+    --yellow:rgb(2,123,255);
 }
 
 *{
@@ -11,6 +11,7 @@
     text-decoration: none;
     outline: none; border:none;
     text-transform: capitalize;
+    color:whitesmoke;
     transition: all .2s linear;
 }
 
@@ -20,7 +21,7 @@
 }
 
 html{
-    font-size: 70.5%;
+    font-size: 70%;
     overflow-x: hidden;
 }
 
@@ -29,7 +30,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background:#222;
+    background:rgb(42, 1, 1);
 }
 
 html::-webkit-scrollbar-thumb{
@@ -37,7 +38,10 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#111;
+    background-image:url("https://nexushub.co.za/images/gallery/00008/8573_steelseries_apex_7_image_3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -85,7 +89,7 @@ header{
     z-index: 1000;
     height:100%;
     width:35rem;
-    background:#1a1a1a;
+    background:rgb(0,23,57);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,9 +98,9 @@ header{
 }
 
 header .user img{
-    height:17rem;
-    width:17rem;
-    border-radius: 50%;
+    height:15rem;
+    width:15rem;
+    border-radius:100%;
     object-fit: cover;
     margin-bottom: 1rem;
     border:.7rem solid var(--yellow);
@@ -104,12 +108,12 @@ header .user img{
 
 header .user .name{
     font-size: 3.5rem;
-    color:#fff;
+    color:rgb(2,123,255);
 }
 
 header .user .post{
     font-size: 2rem;
-    color:#eee;
+    color:rgb(2,123,255);
 }
 
 header .navbar{
@@ -126,8 +130,8 @@ header .navbar ul li a{
     display: block;
     padding:0.6rem;
     margin:1rem 0;
-    background:#333;
-    color:#fff;
+    background:white;
+    color:rgb(16,12,191);
     font-size: 2rem;
     border-radius: 5rem;
 }
@@ -139,7 +143,7 @@ header .navbar ul li a:hover{
 #menu{
     position: fixed;
     top:2rem; right:2rem;
-    background:#333;
+    background:rgb(2,123,255);
     color:#fff;
     cursor: pointer;
     font-size: 2.5rem;
@@ -160,12 +164,12 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color:rgb(255, 255, 255);
+    color:white;
 }
 
 .home h1{
     font-size:5rem;
-    color:#fff;
+    color:rgb(76, 140, 208);
 }
 
 .home h1 span{
@@ -174,7 +178,7 @@ header .navbar ul li a:hover{
 
 .home p{
     font-size:2rem;
-    color:#eee;
+    color:whitesmoke ;
     padding: 1rem 0;
 }
 
@@ -200,7 +204,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .info h3 span{
-    color:#eee;
+    color:whitesmoke;
     padding:0 .5rem;
 }
 
@@ -210,10 +214,12 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-wrap: wrap;
 }
-
+#github-calendar{
+    color:rgb(2,123,255);
+}
 .about .row .counter .box{
     width:20rem;
-    background:#222;
+    background:rgb(2,123,255);
     text-align: center;
     padding: 2rem;
     margin:2rem;
@@ -221,12 +227,12 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box span{
     font-size: 4rem;
-    color:var(--blue);
+    color:var(--yellow);
 }
 
 .about .row .counter .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:rgb(2,123,255);
 }
 .colm{
     display: grid;
@@ -238,7 +244,7 @@ header .navbar ul li a:hover{
     margin-top: 100px;
     /* border:2px solid white; */
     gap:25px;
-    color :white;
+    color :rgb(2,123,255);
     text-align:center;
     margin-bottom: 20px;
 }
@@ -265,27 +271,27 @@ header .navbar ul li a:hover{
     width:27rem;
     margin:4rem 1rem;
     padding-left: 4rem;
-    border-left: .2rem solid #fff;
+    border-left: .2rem solid whitesmoke;
     position: relative;
 }
 
 .education .box-container .box span{
     font-size: 1.3rem;
-    background:#222;
-    color:#fff;
+    background:rgb(2,123,255);
+    color:rgb(249, 247, 247);;
     border-radius: 5rem;
     padding:.5rem 2.5rem;
 }
 
 .education .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:whitesmoke;
     padding-top: 1.5rem;
 }
 
 .education .box-container .box p{
     font-size: 1.4rem;
-    color:#eee;
+    color:whitesmoke;
     padding: 1rem 0;
 }
 
@@ -298,8 +304,8 @@ header .navbar ul li a:hover{
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color:#fff;
-    background:var(--blue);
+    color:rgb(2,123,255);
+    /* background:var(--yellow); */
 }
 
 .portfolio .box-container{
@@ -352,8 +358,8 @@ header .navbar ul li a:hover{
 .contact .row form .box{
     padding:1.5rem;
     margin:1rem 0;
-    background:#3333;
-    color:#fff;
+    background:rgb(127, 165, 204);
+    color:rgb(2,123,255);
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
@@ -379,14 +385,14 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#eee;
+    color:rgb(170, 208, 250);
     padding:1rem 0;
     font-weight: normal;
 }
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color:var(--blue);
+    color:var(--yellow);
 }
 
 .top{
@@ -395,6 +401,202 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
+/* Github Calander */
+:root {
+    --color-calendar-graph-day-bg: #dddbdb;
+    --color-calendar-graph-day-L1-bg: #1ce712;
+    --color-calendar-graph-day-L2-bg: #45a045;
+    --color-calendar-graph-day-L3-bg: #047526;
+    --color-calendar-graph-day-L4-bg: #0a4208;
+  }
+  
+  rect.ContributionCalendar-day[data-level='0'] {
+      fill: var(--color-calendar-graph-day-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='1'] {
+      fill: var(--color-calendar-graph-day-L1-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='2'] {
+      fill: var(--color-calendar-graph-day-L2-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='3'] {
+      fill: var(--color-calendar-graph-day-L3-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='4'] {
+      fill: var(--color-calendar-graph-day-L4-bg);
+  }
+  
+  .calendar .width-full > .float-left {
+      display: none;
+  }
+  
+  .calendar {
+      font-family: Helvetica, arial;
+      border: 1px solid #DDDDDD;
+      border-radius: 3px;
+      min-height: 243px;
+      text-align: center;
+      margin: 0 auto;
+  }
+  
+  .calendar-graph text.wday,
+  .calendar-graph text.month {
+      font-size: 10px;
+      fill: #aaa;
+  }
+  
+  .contrib-legend {
+      text-align: right;
+      padding: 0 14px 10px 0;
+      display: inline-block;
+      float: right;
+  }
+  
+  .contrib-legend .legend {
+      display: inline-block;
+      list-style: none;
+      margin: 0 5px;
+      position: relative;
+      bottom: -1px;
+      padding: 0;
+  }
+  
+  .contrib-legend .legend li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+  }
+  
+  .text-small {
+      font-size: 12px;
+      color: rgb(2,123,255);
+  }
+  
+  .calendar-graph {
+      padding: 5px 0 0;
+      text-align: center;
+  }
+  
+  .contrib-column {
+      padding: 15px 0;
+      text-align: center;
+      border-left: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      font-size: 11px;
+      color: rgb(2,123,255);
+  }
+  
+  .contrib-column-first {
+      border-left: 0;
+  }
+  
+  .table-column {
+      display: table-cell;
+      width: 1%;
+      padding-right: 10px;
+      padding-left: 10px;
+      vertical-align: top;
+  }
+  
+  .contrib-number {
+      font-weight: 300;
+      line-height: 1.3em;
+      font-size: 24px;
+      display: block;
+      color:rgb(2,123,255);
+  }
+  
+  .calendar img.spinner {
+      width: 70px;
+      margin-top: 50px;
+      min-height: 70px;
+  }
+  
+  .monospace {
+      text-align: center;
+      color: rgb(2,123,255);
+      font-family: monospace;
+  }
+  
+  .monospace a {
+      color: #1D75AB;
+      text-decoration: none;
+  }
+  
+  .contrib-footer {
+      font-size: 11px;
+      padding: 0 10px 12px;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+      height: 26px;
+  }
+  
+  .left.text-muted {
+      float: left;
+      margin-left: 9px;
+      color: #767676;
+  }
+  .left.text-muted a {
+      color: #4078c0;
+      text-decoration: none;
+  }
+  .left.text-muted a:hover,
+  .monospace a:hover {
+      text-decoration: underline;
+  }
+  
+  h2.f4.text-normal.mb-3 {
+      display: none;
+  }
+  
+  .float-left.text-gray {
+      float: left;
+  }
+  #user-activity-overview{
+      display:none;
+  }
+  
+  .day-tooltip {
+      white-space: nowrap;
+      position: absolute;
+      z-index: 99999;
+      padding: 10px;
+      font-size: 12px;
+      color: #58a3ee;
+      text-align: center;
+      background: rgba(247, 241, 241, 0.85);
+      border-radius: 3px;
+      display: none;
+      pointer-events: none;
+  }
+  .day-tooltip strong {
+      color: #dfe2e5;
+  }
+  .day-tooltip.is-visible {
+      display: block;
+  }
+  .day-tooltip:after {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      box-sizing: border-box;
+      margin: 0 0 0 -5px;
+      content: " ";
+      border: 5px solid transparent;
+      border-top-color:rgb(2,123,255)
+  }
+  
+  text.ContributionCalendar-label {
+      fill: #ccc;
+      font-size: 11px;
+  }
 
 
 

@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --yellow:rgb(2,123,255);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    color:whitesmoke;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--yellow);
+    color:#333;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:rgb(42, 1, 1);
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+
+body{
+    background-image:url("https://nexushub.co.za/images/gallery/00008/8573_steelseries_apex_7_image_3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding:.7rem 3rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:rgb(0,23,57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height:15rem;
+    width:15rem;
+    border-radius:100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color:rgb(2,123,255);
+}
+
+header .user .post{
+    font-size: 2rem;
+    color:rgb(2,123,255);
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding:0.6rem;
+    margin:1rem 0;
+    background:white;
+    color:rgb(16,12,191);
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background:var(--yellow);
+}
+
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:rgb(2,123,255);
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+.portfolio h1{
+    color: #fff;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color:white;
+}
+
+.home h1{
+    font-size:5rem;
+    color:rgb(76, 140, 208);
+}
+
+.home h1 span{
+    color:var(--yellow);
+}
+
+.home p{
+    font-size:2rem;
+    color:whitesmoke ;
+    padding: 1rem 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:whitesmoke;
+    padding:0 .5rem;
+}
+
+.about .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#github-calendar{
+    color:rgb(2,123,255);
+}
+.about .row .counter .box{
+    width:20rem;
+    background:rgb(2,123,255);
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+}
+
+.about .row .counter .box span{
+    font-size: 4rem;
+    color:var(--yellow);
+}
+
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color:rgb(2,123,255);
+}
+.colm{
+    display: grid;
+    grid-template-columns: repeat(6,90px);
+    grid-template-rows: repeat(2,110px);
+    grid-row-gap:70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    /* border:2px solid white; */
+    gap:25px;
+    color :rgb(2,123,255);
+    text-align:center;
+    margin-bottom: 20px;
+}
+.Ski{
+    height:80px;
+    width: 130px;
+    /* border:2px solid white; */
+
+}
+.Ski img{
+    height:90px;
+
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid whitesmoke;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:rgb(2,123,255);
+    color:rgb(249, 247, 247);;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:whitesmoke;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:whitesmoke;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(2,123,255);
+    /* background:var(--yellow); */
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:rgb(127, 165, 204);
+    color:rgb(2,123,255);
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:rgb(170, 208, 250);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color:var(--yellow);
+}
+
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+/* Github Calander */
+:root {
+    --color-calendar-graph-day-bg: #dddbdb;
+    --color-calendar-graph-day-L1-bg: #1ce712;
+    --color-calendar-graph-day-L2-bg: #45a045;
+    --color-calendar-graph-day-L3-bg: #047526;
+    --color-calendar-graph-day-L4-bg: #0a4208;
+  }
+  
+  rect.ContributionCalendar-day[data-level='0'] {
+      fill: var(--color-calendar-graph-day-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='1'] {
+      fill: var(--color-calendar-graph-day-L1-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='2'] {
+      fill: var(--color-calendar-graph-day-L2-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='3'] {
+      fill: var(--color-calendar-graph-day-L3-bg);
+  }
+  
+  rect.ContributionCalendar-day[data-level='4'] {
+      fill: var(--color-calendar-graph-day-L4-bg);
+  }
+  
+  .calendar .width-full > .float-left {
+      display: none;
+  }
+  
+  .calendar {
+      font-family: Helvetica, arial;
+      border: 1px solid #DDDDDD;
+      border-radius: 3px;
+      min-height: 243px;
+      text-align: center;
+      margin: 0 auto;
+  }
+  
+  .calendar-graph text.wday,
+  .calendar-graph text.month {
+      font-size: 10px;
+      fill: #aaa;
+  }
+  
+  .contrib-legend {
+      text-align: right;
+      padding: 0 14px 10px 0;
+      display: inline-block;
+      float: right;
+  }
+  
+  .contrib-legend .legend {
+      display: inline-block;
+      list-style: none;
+      margin: 0 5px;
+      position: relative;
+      bottom: -1px;
+      padding: 0;
+  }
+  
+  .contrib-legend .legend li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+  }
+  
+  .text-small {
+      font-size: 12px;
+      color: rgb(2,123,255);
+  }
+  
+  .calendar-graph {
+      padding: 5px 0 0;
+      text-align: center;
+  }
+  
+  .contrib-column {
+      padding: 15px 0;
+      text-align: center;
+      border-left: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      font-size: 11px;
+      color: rgb(2,123,255);
+  }
+  
+  .contrib-column-first {
+      border-left: 0;
+  }
+  
+  .table-column {
+      display: table-cell;
+      width: 1%;
+      padding-right: 10px;
+      padding-left: 10px;
+      vertical-align: top;
+  }
+  
+  .contrib-number {
+      font-weight: 300;
+      line-height: 1.3em;
+      font-size: 24px;
+      display: block;
+      color:rgb(2,123,255);
+  }
+  
+  .calendar img.spinner {
+      width: 70px;
+      margin-top: 50px;
+      min-height: 70px;
+  }
+  
+  .monospace {
+      text-align: center;
+      color: rgb(2,123,255);
+      font-family: monospace;
+  }
+  
+  .monospace a {
+      color: #1D75AB;
+      text-decoration: none;
+  }
+  
+  .contrib-footer {
+      font-size: 11px;
+      padding: 0 10px 12px;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+      height: 26px;
+  }
+  
+  .left.text-muted {
+      float: left;
+      margin-left: 9px;
+      color: #767676;
+  }
+  .left.text-muted a {
+      color: #4078c0;
+      text-decoration: none;
+  }
+  .left.text-muted a:hover,
+  .monospace a:hover {
+      text-decoration: underline;
+  }
+  
+  h2.f4.text-normal.mb-3 {
+      display: none;
+  }
+  
+  .float-left.text-gray {
+      float: left;
+  }
+  #user-activity-overview{
+      display:none;
+  }
+  
+  .day-tooltip {
+      white-space: nowrap;
+      position: absolute;
+      z-index: 99999;
+      padding: 10px;
+      font-size: 12px;
+      color: #58a3ee;
+      text-align: center;
+      background: rgba(247, 241, 241, 0.85);
+      border-radius: 3px;
+      display: none;
+      pointer-events: none;
+  }
+  .day-tooltip strong {
+      color: #dfe2e5;
+  }
+  .day-tooltip.is-visible {
+      display: block;
+  }
+  .day-tooltip:after {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      box-sizing: border-box;
+      margin: 0 0 0 -5px;
+      content: " ";
+      border: 5px solid transparent;
+      border-top-color:rgb(2,123,255)
+  }
+  
+  text.ContributionCalendar-label {
+      fill: #ccc;
+      font-size: 11px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+   
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+   .colm{
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(auto,50px);
+    grid: row gap 9px,9px;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+    .colm{
+        grid-template-columns: repeat(2,100px);
+        grid-template-rows: repeat(auto,50px);
+        grid: row gap 9px,9px;
+       }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+    .colm{
+        grid-template-columns: repeat(1,100px);
+        grid-template-rows: repeat(auto,50px);
+        grid: row gap 9px,9px;
+       }
+
+}
